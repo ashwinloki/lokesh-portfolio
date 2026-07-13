@@ -1,3 +1,4 @@
+import "../projects.css";
 import Navbar from "../components/Navbar";
 import ProjectOverview from "../components/ProjectOverview";
 import DesignWork from "../components/DesignWork";

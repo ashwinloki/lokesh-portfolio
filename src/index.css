@@ -284,7 +284,6 @@ a {
   transform: translateY(-3px);
 }
 
-
 /* =========================
    AI PIPELINE
 ========================= */
@@ -404,7 +403,6 @@ a {
   background: #5638ff;
 }
 
-
 /* =========================
    UI/UX PROCESS
 ========================= */
@@ -466,7 +464,6 @@ a {
   color: #444d68;
   font-size: 19px;
 }
-
 
 /* =========================
    HERO RESPONSIVE
@@ -680,19 +677,16 @@ a {
   font-size: 28px;
 }
 
-icon-prana-ai
 .icon-1 {
   color: #00a784;
   background: rgba(0, 167, 132, 0.1);
 }
 
-icon-workflow-agent
 .icon-2 {
   color: #5638ff;
   background: rgba(86, 56, 255, 0.09);
 }
 
-icon-research-assistant
 .icon-3 {
   color: #ed2994;
   background: rgba(237, 41, 148, 0.09);
@@ -722,19 +716,16 @@ icon-research-assistant
   font-size: 11px;
 }
 
-category-prana-ai
 .category-1 {
   color: #008d70;
   background: rgba(0, 167, 132, 0.09);
 }
 
-category-workflow-agent
 .category-2 {
   color: #5638ff;
   background: rgba(86, 56, 255, 0.08);
 }
 
-category-research-assistant
 .category-3 {
   color: #cf237f;
   background: rgba(237, 41, 148, 0.08);
@@ -857,7 +848,6 @@ category-research-assistant
   gap: 17px;
   transform: translateX(3px);
 }
-
 
 /* SHOWCASE */
 
@@ -990,7 +980,6 @@ category-research-assistant
   transform: translate(3px, -3px);
 }
 
-
 /* RESPONSIVE */
 
 @media (max-width: 650px) {
@@ -1122,6 +1111,15 @@ category-research-assistant
   font-weight: 500;
 }
 
+.technology-logo{
+    font-size:26px;
+    transition:transform .25s ease;
+}
+
+.technology-item:hover .technology-logo{
+    transform:scale(1.15);
+}
+
 .technology-item h3 {
   margin-bottom: 5px;
 
@@ -1134,7 +1132,6 @@ category-research-assistant
   color: #788096;
   font-size: 11px;
 }
-
 
 /* RESPONSIVE */
 
@@ -1231,7 +1228,6 @@ category-research-assistant
   font-size: 11px;
 }
 
-
 /* RESPONSIVE */
 
 @media (max-width: 800px) {
@@ -1284,7 +1280,6 @@ category-research-assistant
 
   color: #121936;
 }
-
 
 /* JOURNEY TRACK */
 
@@ -1359,7 +1354,6 @@ category-research-assistant
   font-size: 13px;
   line-height: 1.75;
 }
-
 
 /* RESPONSIVE */
 
@@ -1557,7 +1551,6 @@ category-research-assistant
   transform: translateY(-2px);
 }
 
-
 /* =========================
    FOOTER
 ========================= */
@@ -1595,7 +1588,6 @@ category-research-assistant
   font-size: 12px;
   font-weight: 500;
 }
-
 
 /* RESPONSIVE */
 
@@ -1644,85 +1636,99 @@ category-research-assistant
    PROJECTS PAGE — COMPACT
 ========================= */
 
-.projects-hero {
-  width: min(1400px, calc(100% - 80px));
-  margin: 0 auto;
-  padding: 42px 0 32px;
-}
+@media (max-width: 768px) {
 
-.projects-hero-layout {
-  margin-top: 12px;
+  .projects-hero,
+  .project-overview,
+  .design-work-section,
+  .deep-dives-intro,
+  .technical-project {
+    width: calc(100% - 40px);
+  }
 
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
+  .projects-hero {
+    padding: 55px 0 40px;
+  }
 
-  align-items: end;
-  gap: 50px;
-}
+  .projects-hero-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+  }
 
 .projects-hero h1 {
-  font-size: clamp(44px, 4vw, 62px);
-  line-height: 1.03;
-  letter-spacing: -3px;
-  font-weight: 700;
+  font-size: clamp(34px, 9vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
 
-  color: #101733;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
 }
 
-.projects-hero h1 span {
-  background: linear-gradient(
-    90deg,
-    #5638ff,
-    #8a42ed
-  );
+  .projects-hero-description {
+    max-width: 100%;
+  }
 
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.projects-hero-description {
-  padding-bottom: 3px;
-}
-
-.projects-hero-description > p {
-  max-width: 480px;
-
-  color: #66708a;
-  font-size: 13px;
-  line-height: 1.7;
-}
+  .projects-hero-description p {
+    font-size: 15px;
+    line-height: 1.75;
+  }
 
 .project-count {
-  margin-top: 20px;
-
-  display: flex;
-  align-items: center;
   gap: 12px;
 }
 
 .project-count strong {
-  font-family: "DM Mono", monospace;
-
-  font-size: 28px;
-  font-weight: 500;
-
-  color: #5638ff;
+  font-size: 34px;
 }
 
 .project-count span {
-  font-family: "DM Mono", monospace;
-
-  font-size: 8px;
-  line-height: 1.45;
-  letter-spacing: 0.7px;
-
-  color: #8990a4;
+  font-size: 11px;
 }
 
+  /* ---------- PROJECT OVERVIEW ---------- */
 
-.technical-project {
-  scroll-margin-top: 24px;
+  .project-overview {
+    padding-bottom: 40px;
+  }
+
+  .project-overview-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .overview-card {
+    min-height: auto;
+    padding: 22px;
+  }
+
+  .overview-content h2 {
+    font-size: 28px;
+  }
+
+  .overview-content p {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .overview-tags {
+    padding-right: 0;
+    margin-top: 18px;
+  }
+
+  .overview-tags span {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .overview-arrow {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 /* =========================
@@ -1732,7 +1738,6 @@ category-research-assistant
 .project-overview {
   width: min(1400px, calc(100% - 80px));
   margin: 0 auto;
-
   padding-bottom: 45px;
 }
 
@@ -1744,7 +1749,6 @@ category-research-assistant
 
 .overview-card {
   position: relative;
-
   min-height: 270px;
   padding: 21px;
 
@@ -1767,8 +1771,7 @@ category-research-assistant
 .overview-card:hover {
   transform: translateY(-4px);
 
-  box-shadow:
-    0 18px 45px rgba(53, 39, 130, 0.07);
+  box-shadow: 0 18px 45px rgba(53, 39, 130, 0.07);
 }
 
 .overview-card.green:hover {
@@ -1826,28 +1829,22 @@ category-research-assistant
 
 .overview-content h2 {
   margin-bottom: 12px;
-
   font-size: 23px;
   letter-spacing: -0.8px;
-
   color: #151d3a;
 }
 
 .overview-content p {
   max-width: 350px;
-
   color: #66708a;
-
   font-size: 12px;
   line-height: 1.65;
 }
 
 .overview-tags {
   margin-top: 14px;
-
   display: flex;
   flex-wrap: wrap;
-
   gap: 6px;
   padding-right: 45px;
 }
@@ -1859,7 +1856,6 @@ category-research-assistant
   border-radius: 100px;
 
   color: #69728b;
-
   font-size: 8px;
 }
 
@@ -1889,7 +1885,6 @@ category-research-assistant
   background: #5638ff;
   color: white;
 }
-
 /* RESPONSIVE */
 
 @media (max-width: 1050px) {
@@ -2088,7 +2083,6 @@ category-research-assistant
   transform: translateY(-2px);
 }
 
-
 /* OVERVIEW */
 
 .project-overview-layout {
@@ -2164,7 +2158,6 @@ category-research-assistant
 
   color: #303954;
 }
-
 
 /* ARCHITECTURE */
 
@@ -2252,7 +2245,6 @@ category-research-assistant
   color: #8d7eff;
 }
 
-
 /* ENGINEERING DECISIONS */
 
 .engineering-section {
@@ -2302,7 +2294,6 @@ category-research-assistant
   line-height: 1.75;
 }
 
-
 /* STACK */
 
 .project-stack {
@@ -2331,7 +2322,6 @@ category-research-assistant
   font-family: "DM Mono", monospace;
   font-size: 10px;
 }
-
 
 /* RESPONSIVE */
 
@@ -2663,4 +2653,37 @@ category-research-assistant
 
   color: #101733;
 }
+}
+
+/* =========================
+   PROJECTS HERO MOBILE FIX
+========================= */
+@media (max-width:768px){
+  .projects-hero{
+    width:calc(100% - 40px);
+    margin:0 auto;
+    padding:56px 0 40px;
+  }
+  .projects-hero-layout{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    align-items:flex-start;
+  }
+  .projects-hero h1{
+    font-size:clamp(34px,9vw,44px);
+    line-height:1.1;
+    letter-spacing:-1.5px;
+    word-break:break-word;
+  }
+  .projects-hero-description,
+  .projects-hero-description p{
+    max-width:100%;
+  }
+  .project-count{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    flex-wrap:wrap;
+  }
 }

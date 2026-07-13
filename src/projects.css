@@ -1,0 +1,312 @@
+/* ==========================================
+   PROJECTS PAGE
+========================================== */
+
+.projects-hero,
+.project-overview,
+.design-work-section,
+.deep-dives-intro,
+.technical-project,
+.contact-section {
+  width: min(1400px, calc(100% - 80px));
+  margin: 0 auto;
+}
+
+/* ==========================================
+   PROJECTS HERO
+========================================== */
+
+.projects-hero {
+  padding: 70px 0 50px;
+}
+
+.projects-hero-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: end;
+}
+
+.projects-hero h1 {
+  font-size: clamp(52px, 5vw, 72px);
+  line-height: 1;
+  letter-spacing: -3px;
+  color: #111833;
+}
+
+.projects-hero h1 span {
+  background: linear-gradient(135deg, #5638ff, #8a42ed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.projects-hero-description {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.projects-hero-description p {
+  max-width: 420px;
+  color: #66708a;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.project-count {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-count strong {
+  font-size: 48px;
+  color: #5638ff;
+  line-height: 1;
+}
+
+.project-count span {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #66708a;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+  .projects-hero,
+  .project-overview,
+  .design-work-section,
+  .deep-dives-intro,
+  .technical-project,
+  .contact-section {
+    width: calc(100% - 40px);
+  }
+
+  .projects-hero {
+    padding: 45px 0 35px;
+  }
+
+  .projects-hero-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .projects-hero h1 {
+    font-size: clamp(34px, 10vw, 46px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+  }
+
+  .projects-hero-description p {
+    max-width: 100%;
+  }
+
+  .project-count {
+    margin-top: 10px;
+  }
+}
+
+/* ==========================================
+   PROJECT OVERVIEW
+========================================== */
+
+.projects-overview-new{
+    padding:40px 0 70px;
+}
+
+.projects-overview-grid-new{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.projects-overview-card{
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+
+    min-height:280px;
+
+    padding:24px;
+
+    border:1px solid rgba(86,56,255,.12);
+    border-radius:16px;
+
+    background:rgba(255,255,255,.45);
+
+    transition:.3s;
+}
+
+.projects-overview-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 45px rgba(0,0,0,.06);
+}
+
+.projects-overview-card.green:hover{
+    border-color:#00a784;
+}
+
+.projects-overview-card.purple:hover{
+    border-color:#5638ff;
+}
+
+.projects-overview-card.pink:hover{
+    border-color:#e3329a;
+}
+
+.projects-overview-card .overview-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.projects-overview-card .overview-number{
+    font-size:12px;
+    color:#7b8399;
+}
+
+.projects-overview-card .overview-category{
+    padding:5px 8px;
+    border-radius:6px;
+    font-size:10px;
+}
+
+.projects-overview-card.green .overview-category{
+    color:#008c76;
+    background:rgba(0,159,137,.08);
+}
+
+.projects-overview-card.purple .overview-category{
+    color:#5638ff;
+    background:rgba(86,56,255,.08);
+}
+
+.projects-overview-card.pink .overview-category{
+    color:#d82d91;
+    background:rgba(227,50,154,.08);
+}
+
+.projects-overview-card .overview-content{
+    margin-top:22px;
+}
+
+.projects-overview-card h2{
+    font-size:34px;
+    line-height:1.1;
+    margin-bottom:14px;
+    color:#151d3a;
+}
+
+.projects-overview-card p{
+    color:#66708a;
+    line-height:1.75;
+    margin-bottom:22px;
+}
+
+.projects-overview-card .overview-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+
+.projects-overview-card .overview-tags span{
+    padding:6px 10px;
+    border:1px solid rgba(86,56,255,.12);
+    border-radius:50px;
+    font-size:11px;
+}
+
+.projects-overview-card .overview-arrow{
+    margin-top:auto;
+    width:42px;
+    height:42px;
+
+    display:grid;
+    place-items:center;
+
+    border-radius:50%;
+
+    color:#5638ff;
+
+    border:1px solid rgba(86,56,255,.18);
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.projects-overview-grid-new{
+    grid-template-columns:1fr;
+}
+
+.projects-overview-card{
+    min-height:auto;
+}
+
+.projects-overview-card h2{
+    font-size:30px;
+}
+
+}
+
+/* ===== DEEP DIVES INTRO ===== */
+
+.deep-dives-heading{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.deep-dives-heading h2{
+    font-size:42px;
+    line-height:1.08;
+    letter-spacing:-2px;
+}
+
+.deep-dives-heading p{
+    max-width:100%;
+    font-size:16px;
+}
+
+/* ==========================================
+   TECHNOLOGY BADGES
+========================================== */
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+
+  border: 1px solid rgba(86,56,255,.10);
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.75);
+  backdrop-filter: blur(12px);
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: all .25s ease;
+}
+
+.tech-badge:hover{
+  transform: translateY(-2px);
+  border-color:#5638ff;
+  box-shadow:0 10px 25px rgba(86,56,255,.10);
+}
+
+.tech-icon{
+  font-size:17px;
+  flex-shrink:0;
+}

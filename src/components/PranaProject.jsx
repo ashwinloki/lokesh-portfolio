@@ -1,3 +1,5 @@
+import TechBadge from "./TechBadge";
+
 const PranaProject = () => {
   const techStack = [
     "Python",
@@ -205,10 +207,11 @@ const PranaProject = () => {
         <span className="content-label">TECHNOLOGY STACK</span>
 
         <div className="stack-list">
-          {techStack.map((tech) => (
-            <span key={tech}>{tech}</span>
-          ))}
-        </div>
+  {techStack.map((tech) => (
+    <TechBadge key={tech} tech={tech} />
+  ))}
+</div>
+
       </div>
     </section>
   );

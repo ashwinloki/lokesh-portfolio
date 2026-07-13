@@ -2,12 +2,12 @@ import { projectDetails } from "../data/projectDetails";
 
 const ProjectOverview = () => {
   return (
-    <section className="project-overview" id="all-projects">
-      <div className="project-overview-grid">
+    <section className="projects-overview-new" id="all-projects">
+      <div className="projects-overview-grid-new">
         {projectDetails.map((project) => (
           <a
             href={`#${project.id}`}
-            className={`overview-card ${project.accent}`}
+            className={`projects-overview-card ${project.accent}`}
             key={project.id}
           >
             <div className="overview-top">
